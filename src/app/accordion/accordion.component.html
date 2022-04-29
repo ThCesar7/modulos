@@ -1,89 +1,160 @@
 <mat-accordion>
 
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+  <mat-expansion-panel>
     <mat-expansion-panel-header>
+
       <mat-panel-title><mat-icon>calendar_today</mat-icon>
-       Previdenicario
+      <p class="textocard"> Previdenicario</p>
       </mat-panel-title>
+
       <mat-panel-description>
-        {{panelOpenState ? 'Frase aberto' : 'Frase fechado'}}
       </mat-panel-description>
     </mat-expansion-panel-header>
 
-      <mat-tab-group dynamicHeight animationDuration="0ms">
-        <mat-tab label="Planos Patrocinados">
-          <div>
-            <div class="example-small-box mat-elevation-z4">
-              Cadastro
+      <mat-tab-group class="group" dynamicHeight animationDuration="0ms">
+
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <button mat-raised-button>Planos Patrocinados</button>
+          </ng-template>
+
+            <div class="lista">
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Cadastro
+              </div>
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Participantes
+              </div>
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Arrecadação
+              </div>
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Benefício
+              </div>
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Instruções Normativas
+              </div>
             </div>
-            <div class="example-small-box mat-elevation-z4">
-              Participantes
-            </div>
-            <div class="example-small-box mat-elevation-z4">
-              Arrecadação
-            </div>
-            <div class="example-small-box mat-elevation-z4">
-              Benefício
-            </div>
-            <div class="example-small-box mat-elevation-z4">
-              Instruções Normativas
-            </div>
-          </div>
+
         </mat-tab>
-        <mat-tab label="Planos Instituídos">
-          <div>
-            <div class="example-small-box mat-elevation-z4">
-              Cadastro
+
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <button mat-raised-button>Planos Patrocinados</button>
+          </ng-template>
+
+            <div class="lista">
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Cadastro
+              </div>
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Arrecadação
+              </div>
+              <div class="example-small-box mat-elevation-z4 cardhover">
+                Benefício
+              </div>
             </div>
-            <div class="example-small-box mat-elevation-z4">
-              Arrecadação
-            </div>
-            <div class="example-small-box mat-elevation-z4">
-              Benefício
-            </div>
-          </div>
+
         </mat-tab>
       </mat-tab-group>
 
   </mat-expansion-panel>
 
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+  <mat-expansion-panel>
     <mat-expansion-panel-header>
-      <mat-panel-title><mat-icon>calendar_today</mat-icon>
-        Self aware panel
+
+      <mat-panel-title>
+
+        <mat-icon> list_alt</mat-icon> <p class="textocard">Administrativo</p>
+
       </mat-panel-title>
       <mat-panel-description>
-        {{panelOpenState ? 'Frase aberto' : 'Frase fechado'}}
+
       </mat-panel-description>
     </mat-expansion-panel-header>
 
-    <app-stepper></app-stepper>
-
   </mat-expansion-panel>
 
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+  <mat-expansion-panel>
     <mat-expansion-panel-header>
-      <mat-panel-title><mat-icon>calendar_today</mat-icon>
-        Self aware panel
+
+      <mat-panel-title>
+
+        <mat-icon>trending_up</mat-icon>  <p class="textocard">Investimento</p>
+
       </mat-panel-title>
       <mat-panel-description>
-        {{panelOpenState ? 'Frase aberto' : 'Frase fechado'}}
+
       </mat-panel-description>
     </mat-expansion-panel-header>
     <!--componente-->
   </mat-expansion-panel>
 
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+  <mat-expansion-panel>
     <mat-expansion-panel-header>
-      <mat-panel-title><mat-icon>calendar_today</mat-icon>
-        Self aware panel
+      <mat-panel-title>
+
+        <mat-icon>assessment</mat-icon> <p class="textocard">Assistencial</p>
+
       </mat-panel-title>
       <mat-panel-description>
-        {{panelOpenState ? 'Frase aberto' : 'Frase fechado'}}
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!--componente-->
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+
+        <mat-icon>person</mat-icon> <p class="textocard">Comunicação</p>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!--componente-->
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+
+        <mat-icon>playlist_add_check</mat-icon> <p class="textocard">Compliance</p>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!--componente-->
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+
+        <mat-icon>library_books</mat-icon> <p class="textocard">Legislação</p>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!--componente-->
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+
+        <mat-icon>settings</mat-icon> <p class="textocard">Ferramentas</p>
+
+      </mat-panel-title>
+      <mat-panel-description>
+
       </mat-panel-description>
     </mat-expansion-panel-header>
     <!--componente-->
