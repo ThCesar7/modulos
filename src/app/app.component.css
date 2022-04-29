@@ -1,0 +1,25 @@
+.conter{
+  background-color: #1d316a;
+  height: 1000px;
+  width: 600px;
+}
+
+.container{
+  margin-top: 40px;
+}
+
+.texto{
+  margin-top: 60px;
+  color: #1d316a;
+}
+
+.texto2{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #1d316a;
+}
+
+
+
+
